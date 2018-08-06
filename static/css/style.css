@@ -5,12 +5,9 @@ body, li p {
 	font-family: 'Merriweather', serif;
 }
 
-h1,h2,h3,h4,h5,h6,header,header.a {
+header,header.a {
 	text-transform: lowercase;
 	font-family: 'Alegreya Sans SC', sans-serif;
-}
-
-header,header.a{
 	font-weight: bold;
 }
 
@@ -89,8 +86,8 @@ div.content {
 
 header {
 	display:block;
-	padding: 0.5rem 0 0.5rem 0;
-	border-bottom: 0.10em solid black;
+	padding: 1.0rem 0 1.0rem 0;
+	border-bottom: 0.07em solid #eee;
 }
 
 footer {
@@ -178,7 +175,7 @@ table th {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 }
 
 a {
@@ -192,38 +189,31 @@ a {
 	transition-duration: 0.2s;
 }
 
-
-div.nav a:active div { 
-	background: #cacaca;
-}
-
 a:active { 
 	color: #777; 
-}
-
-a:hover {
-	background: #F3F4F4;
-	-moz-transition-property: background;
-	-webkit-transition-property: background;
-	transition-property: background;
-	-moz-transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-	transition-duration: 0.2s;
 }
 
 p a {
 	color: #0366d6;
 }
-
 code {
-	font-size: 85%;
+	font-size: 90%;
 	margin-bottom: 20px;
-	background-color: #F4F4F5;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	-o-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+}
+
+pre {
+    font-size:0.9rem;
+    background: #f8f8f8;
+    padding: 1em;
+    margin-bottom:20px;
+    vertical-align: text-bottom;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
 }
 
 figcaption {

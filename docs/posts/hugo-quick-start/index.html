@@ -25,16 +25,15 @@
 	
 	
 <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-111533728-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-111533728-1', 'auto');
 	
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -42,13 +41,13 @@ ga('send', 'pageview');
 
 <header>
 	
-	<a href="https://resugary.github.io/hugo-theme-one/" style="float: left;color:#777;"><strong>Hugo Theme One</strong></a>
+	<a href="https://resugary.github.io/hugo-theme-one/" style="float: left;color:#ff3b30;">Hugo Theme One</a>
 	
-	&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/archives/" style="color:#777;"><strong>Archives</strong></a>&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/about/" style="color:#777;"><strong>About</strong></a>
+	&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/archives/" style="color:#777;">Archives</a>&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/about/" style="color:#777;">About</a>
 	
 	
 	
-	<a href="https://resugary.github.io/hugo-theme-one/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+	<a href="https://resugary.github.io/hugo-theme-one/index.xml" style="color:#777;float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 </header>
 
 
@@ -106,43 +105,27 @@ window.onload = ready;
 <h2 id="step-1-install-hugo">Step 1: Install Hugo</h2>
 
 <p>Homebrew, a package manager for macOS, can be installed from <a href="https://brew.sh/">brew.sh</a>. See <a href="https://gohugo.io/getting-started/installing">install</a> if you are running Windows etc.</p>
-
-<pre><code>brew install hugo
-</code></pre>
-
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">brew install hugo</pre></div>
 <p>To verify your new install:</p>
-
-<pre><code>hugo version
-</code></pre>
-
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo version</pre></div>
 <h2 id="step-2-create-a-new-site">Step 2: Create a New Site</h2>
-
-<pre><code>hugo new site quickstart
-</code></pre>
-
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo new site quickstart</pre></div>
 <p>The above will create a new Hugo site in a folder named quickstart.</p>
 
 <h2 id="step-3-add-a-theme">Step 3: Add a Theme</h2>
 
 <p>See <a href="https://themes.gohugo.io/">themes.gohugo.io</a> for a list of themes to consider. This quickstart uses the <a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke theme</a>.</p>
-
-<pre><code>cd quickstart;\
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">cd quickstart;\
 git init;\
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;\
 
 # Edit your config.toml configuration file
 # and add the Ananke theme.
-echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
-</code></pre>
-
+echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml</pre></div>
 <h2 id="step-4-add-some-content">Step 4: Add Some Content</h2>
-
-<pre><code>hugo new posts/my-first-post.md
-</code></pre>
-
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo new posts/my-first-post.md</pre></div>
 <p>Edit the newly created content file if you want. Now, start the Hugo server with drafts enabled:</p>
-
-<pre><code>hugo server -D
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">hugo server -D
 
 Started building sites ...
 Built site for language en:
@@ -160,22 +143,17 @@ Watching for changes in /Users/bep/sites/quickstart/{data,content,layouts,static
 Serving pages from memory
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-Navigate to your new site at http://localhost:1313/.
-</code></pre>
-
+Navigate to your new site at http://localhost:1313/.</pre></div>
 <h2 id="step-5-customize-the-theme">Step 5: Customize the Theme</h2>
 
 <p>Your new site already looks great, but you will want to tweak it a little before you release it to the public.</p>
 
 <p>Site Configuration
 Open up config.toml in a text editor:</p>
-
-<pre><code>baseURL = &quot;https://example.org/&quot;
-languageCode = &quot;en-us&quot;
-title = &quot;My New Hugo Site&quot;
-theme = &quot;ananke&quot;
-</code></pre>
-
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">baseURL = &#34;https://example.org/&#34;
+languageCode = &#34;en-us&#34;
+title = &#34;My New Hugo Site&#34;
+theme = &#34;ananke&#34;</pre></div>
 <p>Replace the title above with something more personal. Also, if you already have a domain ready, set the baseURL. Note that this value is not needed when running the local development server.</p>
 
 <p>Tip: Make the changes to the site configuration or any other file in your site while the Hugo server is running, and you will see the changes in the browser right away.</p>
@@ -185,10 +163,12 @@ theme = &quot;ananke&quot;
 </div>
 
 
+  <p><em>Written on December 20, 2016</em></p>
+
 
 
 <footer>
-	<p>© 2017-2018, all rights reserved.</a>
+	<p>&copy; 2018 All rights reserved.</p>
 </footer>
 </body>
 </html>

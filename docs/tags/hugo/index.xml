@@ -22,43 +22,27 @@
 &lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1: Install Hugo&lt;/h2&gt;
 
 &lt;p&gt;Homebrew, a package manager for macOS, can be installed from &lt;a href=&#34;https://brew.sh/&#34;&gt;brew.sh&lt;/a&gt;. See &lt;a href=&#34;https://gohugo.io/getting-started/installing&#34;&gt;install&lt;/a&gt; if you are running Windows etc.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brew install hugo
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;brew install hugo&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;To verify your new install:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo version
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo version&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;step-2-create-a-new-site&#34;&gt;Step 2: Create a New Site&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site quickstart
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo new site quickstart&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The above will create a new Hugo site in a folder named quickstart.&lt;/p&gt;
 
 &lt;h2 id=&#34;step-3-add-a-theme&#34;&gt;Step 3: Add a Theme&lt;/h2&gt;
 
 &lt;p&gt;See &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themes.gohugo.io&lt;/a&gt; for a list of themes to consider. This quickstart uses the &lt;a href=&#34;https://themes.gohugo.io/gohugo-theme-ananke/&#34;&gt;Ananke theme&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd quickstart;\
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;cd quickstart;\
 git init;\
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;\
 
 # Edit your config.toml configuration file
 # and add the Ananke theme.
-echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
-&lt;/code&gt;&lt;/pre&gt;
-
+echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;step-4-add-some-content&#34;&gt;Step 4: Add Some Content&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new posts/my-first-post.md
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo new posts/my-first-post.md&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Edit the newly created content file if you want. Now, start the Hugo server with drafts enabled:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server -D
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo server -D
 
 Started building sites ...
 Built site for language en:
@@ -76,22 +60,17 @@ Watching for changes in /Users/bep/sites/quickstart/{data,content,layouts,static
 Serving pages from memory
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-Navigate to your new site at http://localhost:1313/.
-&lt;/code&gt;&lt;/pre&gt;
-
+Navigate to your new site at http://localhost:1313/.&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;step-5-customize-the-theme&#34;&gt;Step 5: Customize the Theme&lt;/h2&gt;
 
 &lt;p&gt;Your new site already looks great, but you will want to tweak it a little before you release it to the public.&lt;/p&gt;
 
 &lt;p&gt;Site Configuration
 Open up config.toml in a text editor:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;baseURL = &amp;quot;https://example.org/&amp;quot;
-languageCode = &amp;quot;en-us&amp;quot;
-title = &amp;quot;My New Hugo Site&amp;quot;
-theme = &amp;quot;ananke&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;baseURL = &amp;#34;https://example.org/&amp;#34;
+languageCode = &amp;#34;en-us&amp;#34;
+title = &amp;#34;My New Hugo Site&amp;#34;
+theme = &amp;#34;ananke&amp;#34;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Replace the title above with something more personal. Also, if you already have a domain ready, set the baseURL. Note that this value is not needed when running the local development server.&lt;/p&gt;
 
 &lt;p&gt;Tip: Make the changes to the site configuration or any other file in your site while the Hugo server is running, and you will see the changes in the browser right away.&lt;/p&gt;
@@ -123,29 +102,23 @@ or through &lt;a href=&#34;https://google.com/&#34;&gt;Google&lt;/a&gt;.&lt;/p&g
 
 &lt;p&gt;There are some &lt;em&gt;easy&lt;/em&gt; examples for styling, though. I can&amp;rsquo;t &lt;strong&gt;emphasize&lt;/strong&gt; that enough.
 Creating &lt;a href=&#34;https://google.com/&#34;&gt;links&lt;/a&gt; or &lt;code&gt;inline code&lt;/code&gt; blocks are very straightforward.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;There are some *easy* examples for styling, though. I can&#39;t **emphasize** that enough.
-Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;There are some *easy* examples for styling, though. I can&amp;#39;t **emphasize** that enough.
+Creating [links](https://google.com/) or `inline code` blocks are very straightforward.&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;front-matter-for-fun&#34;&gt;Front Matter for Fun&lt;/h2&gt;
 
 &lt;p&gt;This is the meta data for this post. It is located at the top of the &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; markdown file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title: &amp;quot;Hello Hugo!&amp;quot;
-description: &amp;quot;Saying &#39;Hello&#39; from Hugo&amp;quot;
-date: &amp;quot;2014-09-01&amp;quot;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;---
+title: &amp;#34;Hello Hugo!&amp;#34;
+description: &amp;#34;Saying &amp;#39;Hello&amp;#39; from Hugo&amp;#34;
+date: &amp;#34;2014-09-01&amp;#34;
 categories:
-  - &amp;quot;example&amp;quot;
-  - &amp;quot;hello&amp;quot;
+  - &amp;#34;example&amp;#34;
+  - &amp;#34;hello&amp;#34;
 tags:
-  - &amp;quot;example&amp;quot;
-  - &amp;quot;hugo&amp;quot;
-  - &amp;quot;blog&amp;quot;
----
-&lt;/code&gt;&lt;/pre&gt;
-
+  - &amp;#34;example&amp;#34;
+  - &amp;#34;hugo&amp;#34;
+  - &amp;#34;blog&amp;#34;
+---&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This section, called &amp;lsquo;Front Matter&amp;rsquo;, is what tells Hugo about the content in this file: the &lt;code&gt;title&lt;/code&gt; of the item, the
 &lt;code&gt;description&lt;/code&gt;, and the &lt;code&gt;date&lt;/code&gt; it was posted. In our example, we&amp;rsquo;ve added two custom bits of data too. The &lt;code&gt;categories&lt;/code&gt; and
 &lt;code&gt;tags&lt;/code&gt; sections are used in this example for indexing/grouping content. You will learn more about what that means by

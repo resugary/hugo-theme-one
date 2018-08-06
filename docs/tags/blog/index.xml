@@ -34,29 +34,23 @@ or through &lt;a href=&#34;https://google.com/&#34;&gt;Google&lt;/a&gt;.&lt;/p&g
 
 &lt;p&gt;There are some &lt;em&gt;easy&lt;/em&gt; examples for styling, though. I can&amp;rsquo;t &lt;strong&gt;emphasize&lt;/strong&gt; that enough.
 Creating &lt;a href=&#34;https://google.com/&#34;&gt;links&lt;/a&gt; or &lt;code&gt;inline code&lt;/code&gt; blocks are very straightforward.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;There are some *easy* examples for styling, though. I can&#39;t **emphasize** that enough.
-Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;There are some *easy* examples for styling, though. I can&amp;#39;t **emphasize** that enough.
+Creating [links](https://google.com/) or `inline code` blocks are very straightforward.&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;front-matter-for-fun&#34;&gt;Front Matter for Fun&lt;/h2&gt;
 
 &lt;p&gt;This is the meta data for this post. It is located at the top of the &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; markdown file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title: &amp;quot;Hello Hugo!&amp;quot;
-description: &amp;quot;Saying &#39;Hello&#39; from Hugo&amp;quot;
-date: &amp;quot;2014-09-01&amp;quot;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;---
+title: &amp;#34;Hello Hugo!&amp;#34;
+description: &amp;#34;Saying &amp;#39;Hello&amp;#39; from Hugo&amp;#34;
+date: &amp;#34;2014-09-01&amp;#34;
 categories:
-  - &amp;quot;example&amp;quot;
-  - &amp;quot;hello&amp;quot;
+  - &amp;#34;example&amp;#34;
+  - &amp;#34;hello&amp;#34;
 tags:
-  - &amp;quot;example&amp;quot;
-  - &amp;quot;hugo&amp;quot;
-  - &amp;quot;blog&amp;quot;
----
-&lt;/code&gt;&lt;/pre&gt;
-
+  - &amp;#34;example&amp;#34;
+  - &amp;#34;hugo&amp;#34;
+  - &amp;#34;blog&amp;#34;
+---&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This section, called &amp;lsquo;Front Matter&amp;rsquo;, is what tells Hugo about the content in this file: the &lt;code&gt;title&lt;/code&gt; of the item, the
 &lt;code&gt;description&lt;/code&gt;, and the &lt;code&gt;date&lt;/code&gt; it was posted. In our example, we&amp;rsquo;ve added two custom bits of data too. The &lt;code&gt;categories&lt;/code&gt; and
 &lt;code&gt;tags&lt;/code&gt; sections are used in this example for indexing/grouping content. You will learn more about what that means by

@@ -17,7 +17,7 @@
       <pubDate>Thu, 21 Dec 2017 23:30:36 +0800</pubDate>
       
       <guid>https://resugary.github.io/hugo-theme-one/posts/a-little-because-by-teshima-aoi/</guid>
-      <description>&lt;p&gt;Share a song &amp;ldquo;&lt;a href=&#34;https://soundcloud.com/momoro-cutiecutie/a-little-because-teshima-aoi&#34;&gt;A Little Because&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+      <description>&lt;p&gt;Share a song &lt;a href=&#34;https://soundcloud.com/momoro-cutiecutie/a-little-because-teshima-aoi&#34;&gt;&amp;ldquo;A Little Because&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;A Little Because is a short version of Because.&lt;/p&gt;
@@ -45,7 +45,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://wx1.sinaimg.cn/large/b28d52d0gy1fmocc5eiekj20lc0sgwhz.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;source: Twiiter&lt;a href=&#34;https://twitter.com/lespros_rio/status/672026262374756352&#34;&gt;@lespros_rio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;source: Twiiter@&lt;a href=&#34;https://twitter.com/lespros_rio/status/672026262374756352&#34;&gt;lespros_rio&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -55,86 +55,66 @@
       <pubDate>Wed, 20 Dec 2017 12:33:21 +0800</pubDate>
       
       <guid>https://resugary.github.io/hugo-theme-one/posts/syntax-highlighting-preview/</guid>
-      <description>&lt;p&gt;Syntax highlighting is a feature of text editors that are used for programming, scripting, or markup languages, such as HTML. Besides Chroma, the default syntax hightlighter in Hugo, &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; is a better choice. The bare minimum for using highlight.js on a web page is linking to the library along with one of the styles and calling initHighlightingOnLoad:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/path/to/styles/default.css&amp;quot;&amp;gt;
-&amp;lt;script src=&amp;quot;/path/to/highlight.pack.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Theme one uses the github style color theme.&lt;/p&gt;
+      <description>&lt;p&gt;Hugo comes with really fast syntax highlighting from Chroma and provides a &lt;a href=&#34;https://xyproto.github.io/splash/docs/all.html&#34;&gt;Chroma style gallery&lt;/a&gt;. You can configure syntax highlighter in the &lt;code&gt;config.toml&lt;/code&gt; file. The theme one uses the pygments style color style.&lt;/p&gt;
 
 &lt;p&gt;CSS&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;@font-face {
-  font-family: Chunkfive; src: url(&#39;Chunkfive.otf&#39;);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;@&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;font-face&lt;/span&gt; {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;font-family&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;Chunkfive&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;Chunkfive.otf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;);&lt;/span&gt;
 }
 
-body, .usertext {
-  color: #F0F0F0; background: #600;
-  font-family: Chunkfive, sans;
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;,&lt;/span&gt; .&lt;span style=&#34;color:#00f;font-weight:bold&#34;&gt;usertext&lt;/span&gt; {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#666&#34;&gt;#F0F0F0&lt;/span&gt;; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;background&lt;/span&gt;: &lt;span style=&#34;color:#666&#34;&gt;#600&lt;/span&gt;;
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;font-family&lt;/span&gt;: Chunkfive, sans;
 }
 
-@import url(print.css);
-@media print {
-  a[href^=http]::after {
-    content: attr(href)
+@&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;print&lt;/span&gt;.&lt;span style=&#34;color:#00f;font-weight:bold&#34;&gt;css&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;)&lt;/span&gt;;
+@&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;print&lt;/span&gt; {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;^=&lt;/span&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;http&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;]&lt;/span&gt;::&lt;span style=&#34;color:#a2f&#34;&gt;after&lt;/span&gt; {
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;content&lt;/span&gt;: &lt;span style=&#34;color:#008000&#34;&gt;attr&lt;/span&gt;(href)
   }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;JavaScript&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function $initHighlight(block, cls) {
-  try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class=&amp;quot;${cls}&amp;quot;`;
-  } catch (e) {
-    /* handle exception */
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;function&lt;/span&gt; $initHighlight(block, cls) {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;try&lt;/span&gt; {
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;if&lt;/span&gt; (cls.search(&lt;span style=&#34;color:#b68&#34;&gt;/\bno\-highlight\b/&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;)
+      &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;return&lt;/span&gt; process(block, &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;true&lt;/span&gt;, &lt;span style=&#34;color:#666&#34;&gt;0x0F&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+             &lt;span style=&#34;color:#ba2121&#34;&gt;` class=&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#b68;font-weight:bold&#34;&gt;${&lt;/span&gt;cls&lt;span style=&#34;color:#b68;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#34;`&lt;/span&gt;;
+  } &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;catch&lt;/span&gt; (e) {
+    &lt;span style=&#34;color:#408080;font-style:italic&#34;&gt;/* handle exception */&lt;/span&gt;
   }
-  for (var i = 0 / 2; i &amp;lt; classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
-      console.log(&#39;undefined&#39;);
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;var&lt;/span&gt; i &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;&#34;&gt;/ 2; i &amp;lt; classes.length; i++) {&lt;/span&gt;
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;if&lt;/span&gt; (checkCondition(classes[i]) &lt;span style=&#34;color:#666&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;undefined&lt;/span&gt;)
+      console.log(&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt;);
   }
 }
 
-export  $initHighlight;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;export&lt;/span&gt;  $initHighlight;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Python&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#a2f&#34;&gt;@requires_authorization&lt;/span&gt;
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;somefunc&lt;/span&gt;(param1&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;, param2&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;0&lt;/span&gt;):
+    &lt;span style=&#34;color:#ba2121&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;&amp;#39;&amp;#39;A docstring&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;if&lt;/span&gt; param1 &lt;span style=&#34;color:#666&#34;&gt;&amp;gt;&lt;/span&gt; param2: &lt;span style=&#34;color:#408080;font-style:italic&#34;&gt;# interesting&lt;/span&gt;
+        &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;Gre&lt;/span&gt;&lt;span style=&#34;color:#b62;font-weight:bold&#34;&gt;\&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;ater&amp;#39;&lt;/span&gt;
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;return&lt;/span&gt; (param2 &lt;span style=&#34;color:#666&#34;&gt;-&lt;/span&gt; param1 &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;0b10&lt;/span&gt;l) &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;or&lt;/span&gt; None
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;@requires_authorization
-def somefunc(param1=&#39;&#39;, param2=0):
-    r&#39;&#39;&#39;A docstring&#39;&#39;&#39;
-    if param1 &amp;gt; param2: # interesting
-        print &#39;Gre\&#39;ater&#39;
-    return (param2 - param1 + 1 + 0b10l) or None
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#00f;font-weight:bold&#34;&gt;SomeClass&lt;/span&gt;:
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;pass&lt;/span&gt;
 
-class SomeClass:
-    pass
-
-&amp;gt;&amp;gt;&amp;gt; message = &#39;&#39;&#39;interpreter
-... prompt&#39;&#39;&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;span style=&#34;color:#666&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; message &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;&amp;#39;&amp;#39;interpreter
+&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;... prompt&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Shell Session&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ echo $EDITOR
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ &lt;span style=&#34;color:#008000&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#19177c&#34;&gt;$EDITOR&lt;/span&gt;
 vim
 $ git checkout master
-Switched to branch &#39;master&#39;
-Your branch is up-to-date with &#39;origin/master&#39;.
+Switched to branch &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;master&amp;#39;&lt;/span&gt;
+Your branch is up-to-date with &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;origin/master&amp;#39;&lt;/span&gt;.
 $ git push
 Everything up-to-date
-$ echo &#39;All
-&amp;gt; done!&#39;
+$ &lt;span style=&#34;color:#008000&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;All
+&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;gt; done!&amp;#39;&lt;/span&gt;
 All
-done!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can download a custom bundle from &lt;a href=&#34;https://highlightjs.org/download/&#34;&gt;here&lt;/a&gt; including only the languages you need.&lt;/p&gt;
-</description>
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;done&lt;/span&gt;!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

@@ -25,16 +25,15 @@
 	
 	
 <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-111533728-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-111533728-1', 'auto');
 	
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -42,13 +41,13 @@ ga('send', 'pageview');
 
 <header>
 	
-	<a href="https://resugary.github.io/hugo-theme-one/" style="float: left;color:#777;"><strong>Hugo Theme One</strong></a>
+	<a href="https://resugary.github.io/hugo-theme-one/" style="float: left;color:#ff3b30;">Hugo Theme One</a>
 	
-	&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/archives/" style="color:#777;"><strong>Archives</strong></a>&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/about/" style="color:#777;"><strong>About</strong></a>
+	&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/archives/" style="color:#777;">Archives</a>&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/about/" style="color:#777;">About</a>
 	
 	
 	
-	<a href="https://resugary.github.io/hugo-theme-one/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+	<a href="https://resugary.github.io/hugo-theme-one/index.xml" style="color:#777;float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 </header>
 
 
@@ -107,15 +106,17 @@ window.onload = ready;
 
 <p><img src="https://wx1.sinaimg.cn/large/b28d52d0gy1fmocc5eiekj20lc0sgwhz.jpg" alt="" /></p>
 
-<p>source: Twiiter<a href="https://twitter.com/lespros_rio/status/672026262374756352">@lespros_rio</a></p>
+<p>source: Twiiter@<a href="https://twitter.com/lespros_rio/status/672026262374756352">lespros_rio</a></p>
 
 </div>
 
 
+  <p><em>Written on December 20, 2017</em></p>
+
 
 
 <footer>
-	<p>© 2017-2018, all rights reserved.</a>
+	<p>&copy; 2018 All rights reserved.</p>
 </footer>
 </body>
 </html>

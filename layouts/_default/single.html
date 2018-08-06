@@ -52,9 +52,9 @@ window.onload = ready;
   {{ .Content }}
 </div>
 
-<!-- {{ if (eq .Type "posts") }}
-  <p><small><em>Written on {{ .Date.Format "January 2, 2006"}} </em></small></p>
-{{ end }} -->
+{{ if (eq .Type "posts") }}
+  <p><em>Written on {{ .Date.Format "January 2, 2006"}}</em></p>
+{{ end }}
 
 
 {{ partial "footer.html" . }}

@@ -17,7 +17,7 @@
       <pubDate>Thu, 21 Dec 2017 23:30:36 +0800</pubDate>
       
       <guid>https://resugary.github.io/hugo-theme-one/posts/a-little-because-by-teshima-aoi/</guid>
-      <description>&lt;p&gt;Share a song &amp;ldquo;&lt;a href=&#34;https://soundcloud.com/momoro-cutiecutie/a-little-because-teshima-aoi&#34;&gt;A Little Because&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+      <description>&lt;p&gt;Share a song &lt;a href=&#34;https://soundcloud.com/momoro-cutiecutie/a-little-because-teshima-aoi&#34;&gt;&amp;ldquo;A Little Because&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;A Little Because is a short version of Because.&lt;/p&gt;
@@ -45,7 +45,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://wx1.sinaimg.cn/large/b28d52d0gy1fmocc5eiekj20lc0sgwhz.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;source: Twiiter&lt;a href=&#34;https://twitter.com/lespros_rio/status/672026262374756352&#34;&gt;@lespros_rio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;source: Twiiter@&lt;a href=&#34;https://twitter.com/lespros_rio/status/672026262374756352&#34;&gt;lespros_rio&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -55,86 +55,66 @@
       <pubDate>Wed, 20 Dec 2017 12:33:21 +0800</pubDate>
       
       <guid>https://resugary.github.io/hugo-theme-one/posts/syntax-highlighting-preview/</guid>
-      <description>&lt;p&gt;Syntax highlighting is a feature of text editors that are used for programming, scripting, or markup languages, such as HTML. Besides Chroma, the default syntax hightlighter in Hugo, &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; is a better choice. The bare minimum for using highlight.js on a web page is linking to the library along with one of the styles and calling initHighlightingOnLoad:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/path/to/styles/default.css&amp;quot;&amp;gt;
-&amp;lt;script src=&amp;quot;/path/to/highlight.pack.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Theme one uses the github style color theme.&lt;/p&gt;
+      <description>&lt;p&gt;Hugo comes with really fast syntax highlighting from Chroma and provides a &lt;a href=&#34;https://xyproto.github.io/splash/docs/all.html&#34;&gt;Chroma style gallery&lt;/a&gt;. You can configure syntax highlighter in the &lt;code&gt;config.toml&lt;/code&gt; file. The theme one uses the pygments style color style.&lt;/p&gt;
 
 &lt;p&gt;CSS&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;@font-face {
-  font-family: Chunkfive; src: url(&#39;Chunkfive.otf&#39;);
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;@&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;font-face&lt;/span&gt; {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;font-family&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;Chunkfive&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;Chunkfive.otf&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;);&lt;/span&gt;
 }
 
-body, .usertext {
-  color: #F0F0F0; background: #600;
-  font-family: Chunkfive, sans;
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;body&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;,&lt;/span&gt; .&lt;span style=&#34;color:#00f;font-weight:bold&#34;&gt;usertext&lt;/span&gt; {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;color&lt;/span&gt;: &lt;span style=&#34;color:#666&#34;&gt;#F0F0F0&lt;/span&gt;; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;background&lt;/span&gt;: &lt;span style=&#34;color:#666&#34;&gt;#600&lt;/span&gt;;
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;font-family&lt;/span&gt;: Chunkfive, sans;
 }
 
-@import url(print.css);
-@media print {
-  a[href^=http]::after {
-    content: attr(href)
+@&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;print&lt;/span&gt;.&lt;span style=&#34;color:#00f;font-weight:bold&#34;&gt;css&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;)&lt;/span&gt;;
+@&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;media&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;print&lt;/span&gt; {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;^=&lt;/span&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;http&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;]&lt;/span&gt;::&lt;span style=&#34;color:#a2f&#34;&gt;after&lt;/span&gt; {
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;content&lt;/span&gt;: &lt;span style=&#34;color:#008000&#34;&gt;attr&lt;/span&gt;(href)
   }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;JavaScript&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;function $initHighlight(block, cls) {
-  try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class=&amp;quot;${cls}&amp;quot;`;
-  } catch (e) {
-    /* handle exception */
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;function&lt;/span&gt; $initHighlight(block, cls) {
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;try&lt;/span&gt; {
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;if&lt;/span&gt; (cls.search(&lt;span style=&#34;color:#b68&#34;&gt;/\bno\-highlight\b/&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;)
+      &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;return&lt;/span&gt; process(block, &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;true&lt;/span&gt;, &lt;span style=&#34;color:#666&#34;&gt;0x0F&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
+             &lt;span style=&#34;color:#ba2121&#34;&gt;` class=&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#b68;font-weight:bold&#34;&gt;${&lt;/span&gt;cls&lt;span style=&#34;color:#b68;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#34;`&lt;/span&gt;;
+  } &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;catch&lt;/span&gt; (e) {
+    &lt;span style=&#34;color:#408080;font-style:italic&#34;&gt;/* handle exception */&lt;/span&gt;
   }
-  for (var i = 0 / 2; i &amp;lt; classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
-      console.log(&#39;undefined&#39;);
+  &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;var&lt;/span&gt; i &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;&#34;&gt;/ 2; i &amp;lt; classes.length; i++) {&lt;/span&gt;
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;if&lt;/span&gt; (checkCondition(classes[i]) &lt;span style=&#34;color:#666&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;undefined&lt;/span&gt;)
+      console.log(&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;undefined&amp;#39;&lt;/span&gt;);
   }
 }
 
-export  $initHighlight;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;export&lt;/span&gt;  $initHighlight;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Python&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#a2f&#34;&gt;@requires_authorization&lt;/span&gt;
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#00f&#34;&gt;somefunc&lt;/span&gt;(param1&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;, param2&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;0&lt;/span&gt;):
+    &lt;span style=&#34;color:#ba2121&#34;&gt;r&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;&amp;#39;&amp;#39;A docstring&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;if&lt;/span&gt; param1 &lt;span style=&#34;color:#666&#34;&gt;&amp;gt;&lt;/span&gt; param2: &lt;span style=&#34;color:#408080;font-style:italic&#34;&gt;# interesting&lt;/span&gt;
+        &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;Gre&lt;/span&gt;&lt;span style=&#34;color:#b62;font-weight:bold&#34;&gt;\&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;ater&amp;#39;&lt;/span&gt;
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;return&lt;/span&gt; (param2 &lt;span style=&#34;color:#666&#34;&gt;-&lt;/span&gt; param1 &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;0b10&lt;/span&gt;l) &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;or&lt;/span&gt; None
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;@requires_authorization
-def somefunc(param1=&#39;&#39;, param2=0):
-    r&#39;&#39;&#39;A docstring&#39;&#39;&#39;
-    if param1 &amp;gt; param2: # interesting
-        print &#39;Gre\&#39;ater&#39;
-    return (param2 - param1 + 1 + 0b10l) or None
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#00f;font-weight:bold&#34;&gt;SomeClass&lt;/span&gt;:
+    &lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;pass&lt;/span&gt;
 
-class SomeClass:
-    pass
-
-&amp;gt;&amp;gt;&amp;gt; message = &#39;&#39;&#39;interpreter
-... prompt&#39;&#39;&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;span style=&#34;color:#666&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; message &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;&amp;#39;&amp;#39;interpreter
+&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;... prompt&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Shell Session&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ echo $EDITOR
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ &lt;span style=&#34;color:#008000&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#19177c&#34;&gt;$EDITOR&lt;/span&gt;
 vim
 $ git checkout master
-Switched to branch &#39;master&#39;
-Your branch is up-to-date with &#39;origin/master&#39;.
+Switched to branch &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;master&amp;#39;&lt;/span&gt;
+Your branch is up-to-date with &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;origin/master&amp;#39;&lt;/span&gt;.
 $ git push
 Everything up-to-date
-$ echo &#39;All
-&amp;gt; done!&#39;
+$ &lt;span style=&#34;color:#008000&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#ba2121&#34;&gt;&amp;#39;All
+&lt;/span&gt;&lt;span style=&#34;color:#ba2121&#34;&gt;&amp;gt; done!&amp;#39;&lt;/span&gt;
 All
-done!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can download a custom bundle from &lt;a href=&#34;https://highlightjs.org/download/&#34;&gt;here&lt;/a&gt; including only the languages you need.&lt;/p&gt;
-</description>
+&lt;span style=&#34;color:#008000;font-weight:bold&#34;&gt;done&lt;/span&gt;!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -148,43 +128,27 @@ done!
 &lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1: Install Hugo&lt;/h2&gt;
 
 &lt;p&gt;Homebrew, a package manager for macOS, can be installed from &lt;a href=&#34;https://brew.sh/&#34;&gt;brew.sh&lt;/a&gt;. See &lt;a href=&#34;https://gohugo.io/getting-started/installing&#34;&gt;install&lt;/a&gt; if you are running Windows etc.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brew install hugo
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;brew install hugo&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;To verify your new install:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo version
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo version&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;step-2-create-a-new-site&#34;&gt;Step 2: Create a New Site&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site quickstart
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo new site quickstart&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The above will create a new Hugo site in a folder named quickstart.&lt;/p&gt;
 
 &lt;h2 id=&#34;step-3-add-a-theme&#34;&gt;Step 3: Add a Theme&lt;/h2&gt;
 
 &lt;p&gt;See &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themes.gohugo.io&lt;/a&gt; for a list of themes to consider. This quickstart uses the &lt;a href=&#34;https://themes.gohugo.io/gohugo-theme-ananke/&#34;&gt;Ananke theme&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd quickstart;\
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;cd quickstart;\
 git init;\
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke;\
 
 # Edit your config.toml configuration file
 # and add the Ananke theme.
-echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
-&lt;/code&gt;&lt;/pre&gt;
-
+echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;step-4-add-some-content&#34;&gt;Step 4: Add Some Content&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new posts/my-first-post.md
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo new posts/my-first-post.md&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Edit the newly created content file if you want. Now, start the Hugo server with drafts enabled:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server -D
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;hugo server -D
 
 Started building sites ...
 Built site for language en:
@@ -202,22 +166,17 @@ Watching for changes in /Users/bep/sites/quickstart/{data,content,layouts,static
 Serving pages from memory
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-Navigate to your new site at http://localhost:1313/.
-&lt;/code&gt;&lt;/pre&gt;
-
+Navigate to your new site at http://localhost:1313/.&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;step-5-customize-the-theme&#34;&gt;Step 5: Customize the Theme&lt;/h2&gt;
 
 &lt;p&gt;Your new site already looks great, but you will want to tweak it a little before you release it to the public.&lt;/p&gt;
 
 &lt;p&gt;Site Configuration
 Open up config.toml in a text editor:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;baseURL = &amp;quot;https://example.org/&amp;quot;
-languageCode = &amp;quot;en-us&amp;quot;
-title = &amp;quot;My New Hugo Site&amp;quot;
-theme = &amp;quot;ananke&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;baseURL = &amp;#34;https://example.org/&amp;#34;
+languageCode = &amp;#34;en-us&amp;#34;
+title = &amp;#34;My New Hugo Site&amp;#34;
+theme = &amp;#34;ananke&amp;#34;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Replace the title above with something more personal. Also, if you already have a domain ready, set the baseURL. Note that this value is not needed when running the local development server.&lt;/p&gt;
 
 &lt;p&gt;Tip: Make the changes to the site configuration or any other file in your site while the Hugo server is running, and you will see the changes in the browser right away.&lt;/p&gt;
@@ -249,29 +208,23 @@ or through &lt;a href=&#34;https://google.com/&#34;&gt;Google&lt;/a&gt;.&lt;/p&g
 
 &lt;p&gt;There are some &lt;em&gt;easy&lt;/em&gt; examples for styling, though. I can&amp;rsquo;t &lt;strong&gt;emphasize&lt;/strong&gt; that enough.
 Creating &lt;a href=&#34;https://google.com/&#34;&gt;links&lt;/a&gt; or &lt;code&gt;inline code&lt;/code&gt; blocks are very straightforward.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;There are some *easy* examples for styling, though. I can&#39;t **emphasize** that enough.
-Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;There are some *easy* examples for styling, though. I can&amp;#39;t **emphasize** that enough.
+Creating [links](https://google.com/) or `inline code` blocks are very straightforward.&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&#34;front-matter-for-fun&#34;&gt;Front Matter for Fun&lt;/h2&gt;
 
 &lt;p&gt;This is the meta data for this post. It is located at the top of the &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; markdown file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title: &amp;quot;Hello Hugo!&amp;quot;
-description: &amp;quot;Saying &#39;Hello&#39; from Hugo&amp;quot;
-date: &amp;quot;2014-09-01&amp;quot;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;---
+title: &amp;#34;Hello Hugo!&amp;#34;
+description: &amp;#34;Saying &amp;#39;Hello&amp;#39; from Hugo&amp;#34;
+date: &amp;#34;2014-09-01&amp;#34;
 categories:
-  - &amp;quot;example&amp;quot;
-  - &amp;quot;hello&amp;quot;
+  - &amp;#34;example&amp;#34;
+  - &amp;#34;hello&amp;#34;
 tags:
-  - &amp;quot;example&amp;quot;
-  - &amp;quot;hugo&amp;quot;
-  - &amp;quot;blog&amp;quot;
----
-&lt;/code&gt;&lt;/pre&gt;
-
+  - &amp;#34;example&amp;#34;
+  - &amp;#34;hugo&amp;#34;
+  - &amp;#34;blog&amp;#34;
+---&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This section, called &amp;lsquo;Front Matter&amp;rsquo;, is what tells Hugo about the content in this file: the &lt;code&gt;title&lt;/code&gt; of the item, the
 &lt;code&gt;description&lt;/code&gt;, and the &lt;code&gt;date&lt;/code&gt; it was posted. In our example, we&amp;rsquo;ve added two custom bits of data too. The &lt;code&gt;categories&lt;/code&gt; and
 &lt;code&gt;tags&lt;/code&gt; sections are used in this example for indexing/grouping content. You will learn more about what that means by

@@ -25,16 +25,15 @@
 	
 	
 <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-111533728-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-111533728-1', 'auto');
 	
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -42,13 +41,13 @@ ga('send', 'pageview');
 
 <header>
 	
-	<a href="https://resugary.github.io/hugo-theme-one/" style="float: left;color:#777;"><strong>Hugo Theme One</strong></a>
+	<a href="https://resugary.github.io/hugo-theme-one/" style="float: left;color:#ff3b30;">Hugo Theme One</a>
 	
-	&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/archives/" style="color:#777;"><strong>Archives</strong></a>&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/about/" style="color:#777;"><strong>About</strong></a>
+	&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/archives/" style="color:#777;">Archives</a>&nbsp;&nbsp;<a href="https://resugary.github.io/hugo-theme-one/about/" style="color:#777;">About</a>
 	
 	
 	
-	<a href="https://resugary.github.io/hugo-theme-one/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+	<a href="https://resugary.github.io/hugo-theme-one/index.xml" style="color:#777;float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 </header>
 
 
@@ -118,29 +117,23 @@ or through <a href="https://google.com/">Google</a>.</p>
 
 <p>There are some <em>easy</em> examples for styling, though. I can&rsquo;t <strong>emphasize</strong> that enough.
 Creating <a href="https://google.com/">links</a> or <code>inline code</code> blocks are very straightforward.</p>
-
-<pre><code>There are some *easy* examples for styling, though. I can't **emphasize** that enough.
-Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
-</code></pre>
-
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">There are some *easy* examples for styling, though. I can&#39;t **emphasize** that enough.
+Creating [links](https://google.com/) or `inline code` blocks are very straightforward.</pre></div>
 <h2 id="front-matter-for-fun">Front Matter for Fun</h2>
 
 <p>This is the meta data for this post. It is located at the top of the <code>content/post/hello-hugo.md</code> markdown file.</p>
-
-<pre><code>---
-title: &quot;Hello Hugo!&quot;
-description: &quot;Saying 'Hello' from Hugo&quot;
-date: &quot;2014-09-01&quot;
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4">---
+title: &#34;Hello Hugo!&#34;
+description: &#34;Saying &#39;Hello&#39; from Hugo&#34;
+date: &#34;2014-09-01&#34;
 categories:
-  - &quot;example&quot;
-  - &quot;hello&quot;
+  - &#34;example&#34;
+  - &#34;hello&#34;
 tags:
-  - &quot;example&quot;
-  - &quot;hugo&quot;
-  - &quot;blog&quot;
----
-</code></pre>
-
+  - &#34;example&#34;
+  - &#34;hugo&#34;
+  - &#34;blog&#34;
+---</pre></div>
 <p>This section, called &lsquo;Front Matter&rsquo;, is what tells Hugo about the content in this file: the <code>title</code> of the item, the
 <code>description</code>, and the <code>date</code> it was posted. In our example, we&rsquo;ve added two custom bits of data too. The <code>categories</code> and
 <code>tags</code> sections are used in this example for indexing/grouping content. You will learn more about what that means by
@@ -149,10 +142,12 @@ examining the code in this example and through reading the Hugo <a href="http://
 </div>
 
 
+  <p><em>Written on September 1, 2014</em></p>
+
 
 
 <footer>
-	<p>© 2017-2018, all rights reserved.</a>
+	<p>&copy; 2018 All rights reserved.</p>
 </footer>
 </body>
 </html>
