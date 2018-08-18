@@ -2,7 +2,7 @@
 
 <div class="content">
   <h1>{{ .Title }}</h1>
-  <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}</aside>
+  <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>&nbsp;&nbsp;&nbsp;{{end}}</aside>
   <p>{{ .Content }}</p>
 </div>
 
