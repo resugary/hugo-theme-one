@@ -1,12 +1,10 @@
 <div class="content">
     <h1>{{ title .Data.Term  }} Posts</h1>
-    {{ range first 7 .Pages }}
-    {{ if eq .Type "posts"}}
+    {{ range first 7 ( where .Site.RegularPages "Type" "posts" ) }}
     <p>
         <aside>{{ .Date.Format "January 2, 2006"}}</aside>
         <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
     </p>
-    {{ end }}
     {{ end }}
 </div>
 
